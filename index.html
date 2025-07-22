@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xoltial | Trigger Her Mind</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="main.js" defer></script>
+</head>
+<body>
+  <div id="app" class="app-container">
+    <div class="login-section" id="loginSection">
+      <h1>Login to Access</h1>
+      <button id="googleLogin">Login with Google</button><br>
+      <input type="text" id="phoneInput" placeholder="+91XXXXXXXXXX" />
+      <button id="sendOtp">Send OTP</button>
+      <div id="otpDiv" style="display:none;">
+        <input type="text" id="otpInput" placeholder="Enter OTP" />
+        <button id="verifyOtp">Verify OTP</button>
+      </div>
+    </div>
+
+    <div id="paymentSection" style="display:none;">
+      <h2>Select a Product</h2>
+      <div class="product">
+        <h3>$2 – All Clips</h3>
+        <button onclick="pay('2')">Pay Now</button>
+      </div>
+      <div class="product">
+        <h3>$5 – Trigger Her Mind (PDF)</h3>
+        <button onclick="pay('5')">Pay Now</button>
+      </div>
+    </div>
+
+    <div id="downloadSection" style="display:none;">
+      <h2>Payment Verified!</h2>
+      <a href="triggerhermind.pdf" download class="download-btn">Download PDF</a>
+    </div>
+  </div>
+
+  <footer>Website by SATYAM</footer>
+</body>
+</html>
